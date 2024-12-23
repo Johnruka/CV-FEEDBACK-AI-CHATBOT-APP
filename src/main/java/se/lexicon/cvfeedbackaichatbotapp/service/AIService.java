@@ -4,7 +4,9 @@ import se.lexicon.entity.CVFeedbackChatbot;
 
 public interface AIService {
 
-    public String generateFeedback(CVFeedbackChatbot cvFeedbackChatbot);
+
+
+    public  String generateFeedback(CVFeedbackChatbot cvFeedbackChatbot);
 
     String convertCVFeedbackChatbotToText(CVFeedbackChatbot cvFeedbackChatbot);
 
