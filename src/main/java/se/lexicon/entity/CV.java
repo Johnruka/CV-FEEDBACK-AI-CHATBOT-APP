@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class CVFeedbackChatbot {
+public class CV {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,7 +26,7 @@ public class CVFeedbackChatbot {
     private String feedback;
 
 
-    public CVFeedbackChatbot(String name, String workExperience, String education, String skills) {
+    public CV(String name, String workExperience, String education, String skills) {
         this.name = name;
         this.workExperience = workExperience;
         this.education = education;

@@ -3,7 +3,6 @@ package se.lexicon.cvfeedbackaichatbotapp.service;
 import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import se.lexicon.entity.CVFeedbackChatbot;
 
 @Service
 public class AIServiceImpl implements AIService {
@@ -16,13 +15,13 @@ public class AIServiceImpl implements AIService {
     }
 
     @Override
-    public String generateFeedback(CVFeedbackChatbot cvFeedbackChatbot) {
+    public String generateFeedback(String cv) {
         return "feedback";
     }
 
     @Override
-    public String convertCVFeedbackChatbotToText(CVFeedbackChatbot cvFeedbackChatbot) {
-        String cvFeedbackChatbotToText = convertCVFeedbackChatbotToText(cvFeedbackChatbot);
+    public String convertCVFeedbackChatbotToText(String cv) {
+        String cvFeedbackChatbotToText = convertCVFeedbackChatbotToText(cv);
         return "cvFeedbackChatbotToText: " + cvFeedbackChatbotToText;
     }
 
